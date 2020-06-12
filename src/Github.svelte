@@ -48,6 +48,18 @@ async function  getUsers() {
 
 </script>  
 
+<style>
+.userGithub {
+    font-size:15px;
+    text-align: center;
+    margin-top: 10px;
+}
+.credits {
+    text-align: center;
+}
+</style>
+
+
 <section>
 {#await getUsers()}
 <!-- promise is pending -->
@@ -56,8 +68,8 @@ async function  getUsers() {
  {#each users as user}
  <article class="user">
  <img src={user.avatar_url} alt={user.login}>
- <div class="user-info">
- <h3>User: {user.login}</h3>
+ <div class="userGithub">
+ <h3>{user.login}</h3>
  <a href={user.html_url} class="btn-primary" target="blank">Github url</a>
  </div>
  </article>
@@ -68,3 +80,4 @@ async function  getUsers() {
 {/await}
 
 </section> 
+<div class="credits"><a href="https://www.youtube.com/watch?v=uk1eM0Yn0UQ">Credits</a></div>
