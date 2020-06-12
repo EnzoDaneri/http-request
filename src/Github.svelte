@@ -51,7 +51,7 @@ async function  getUsers() {
 <section>
 {#await getUsers()}
 <!-- promise is pending -->
-<h1>Loading</h1>
+<h1>Loading...</h1>
 {:then users}
  {#each users as user}
  <article class="user">
