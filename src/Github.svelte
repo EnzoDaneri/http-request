@@ -50,7 +50,7 @@ async function  getUsers() {
 
 <style>
 .userGithub {
-    font-size:15px;
+    font-size:10px;
     text-align: center;
     margin-top: 10px;
 }
